@@ -26,7 +26,8 @@ class Feed extends Component {
     // }
     return (
       <div style={styles.container} id='feed'>
-          {/* {this.state.comic}   */}
+          {/* {this.props.feedUrl} */}
+          {/* {this.state.comic} */}
         <FeedItem comicImage={this.state.comic} />   
       </div>);
   }
