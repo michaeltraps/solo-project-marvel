@@ -10,6 +10,7 @@ module.exports = {
     mode: 'development',
     devServer: {
         hot: true,
+        headers: { 'Access-Control-Allow-Origin': '*' },
         proxy: {
             '/api**': {
                 target: 'http://localhost:3000/',
@@ -43,10 +44,6 @@ module.exports = {
         }),
     ],
     resolve: {
-        fallback: {
-            "stream": require.resolve("stream-browserify"),
-            "buffer": require.resolve("buffer/")   
-        },
         extensions: ['.js', '.jsx'],
     },
     

@@ -20,28 +20,11 @@ class Feed extends Component {
   }
 
   render() { 
-    // const feedItems = [];
-    // for (let i = 0; i < this.state.comic.length; i++) {
-    //   feedItems.push(<FeedItem key={i} url={this.state.comic} />);
-    // }
     return (
-      <div style={styles.container} id='feed'>
-          {/* {this.state.comic}   */}
+      <div id='feed'>
         <FeedItem comicImage={this.state.comic} />   
       </div>);
   }
 }
-
-const styles = {
-  container: {
-    border: '1px black solid',
-    width: '75%',
-    height: '50%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: '10px',
-  },
-};
 
 export default Feed;
