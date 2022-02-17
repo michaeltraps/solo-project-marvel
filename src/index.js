@@ -44,13 +44,6 @@ class App extends Component {
   }
 }
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
-};
 
 // Render an <App> component to the #app div in the body
 ReactDOM.render(<App />, document.getElementById('root'));
